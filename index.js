@@ -104,6 +104,7 @@ let cityNamePrompt = prompt ("Stad?")
 const h2 = document.querySelector("h2")
 const h3 = document.querySelector("h3")
 const titlePage = document.querySelector("title")
+function getCityByName(cityNamePrompt) {
 }
 
 //markCityBox(cities[0], "target");
