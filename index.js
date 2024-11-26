@@ -94,6 +94,12 @@ function updateBoxDistance(cityObject, kindOfCity) {
         cityBox.id = kindOfCity;  
         cityBox.textContent = `${cityObject.city.name} ligger ${cityInMiles} mil bort`; // Uppdatera texten
     }
+    if (kindOfCity == "closest"){
+        closestSpan.textContent = closestSpan.textContent = `${cityObject.city.name}`
+    } else if (kindOfCity == "furthest"){
+        FurthestSpan.textContent = `${cityObject.city.name}`
+    }
+} 
 }
 
 //markCityBox(cities[0], "target");
