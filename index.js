@@ -167,6 +167,13 @@ function createDistanceTable(cities, distances) {
 //         cell.textContent = `Hi`
 //     }
      
+        const row = document.createElement("div");
+        mainDiv.append(row);
+        row.style.gridRow = "1";  
+        row.style.gridColumn = `${i + 2}`;  // Börja från kolumn 2
+        row.textContent = city.id; 
+        row.classList.add("head_row");
+        row.classList.add("cell");
 }
 
 //markCityBox(cities[0], "target");
