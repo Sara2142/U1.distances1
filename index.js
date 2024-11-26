@@ -146,6 +146,16 @@ if (targetCity) {
    
 
 function createDistanceTable(cities, distances) {
+    for (let i = 0; i < cities.length; i++) {
+        const city = cities[i];
+        const col = document.createElement("div");
+        mainDiv.append(col);
+        col.style.gridColumn = "1"; 
+        col.style.gridRow = `${i + 2}`;  // Börja från rad 2
+        col.textContent = city.id + " - " + city.name;
+        col.classList.add("head_column");
+        col.classList.add("cell");
+        
 
     
 //     for (let i = 0; i <= 38; i++){
