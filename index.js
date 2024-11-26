@@ -13,6 +13,14 @@ for (let cityName of cities){
 function getClosestCity(targetCityObject) {
     let nearCity = null;
     let nearDistance = null; 
+    for (let objects of distances) {
+        let secondCityId;
+
+        if (objects.city1 == targetCityObject.id) {
+            secondCityId = objects.city2;
+        } else if (objects.city2 == targetCityObject.id) {
+            secondCityId = objects.city1;
+        } 
     }
 }
 
