@@ -83,6 +83,10 @@ const furthestCity = getFurthestCity(cities[16]);
 console.log("Furthest City:", furthestCity.city.name, furthestCity.distance);
 
 function updateBoxDistance(cityObject, kindOfCity) {
+    const cityBox = document.getElementById(cityObject.city.id); 
+    const cityInMiles = (cityObject.distance / 10)
+    const closestSpan = document.getElementById("closest")
+    const FurthestSpan = document.getElementById("furthest")
 }
 
 //markCityBox(cities[0], "target");
