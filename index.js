@@ -21,6 +21,13 @@ function getClosestCity(targetCityObject) {
         } else if (objects.city2 == targetCityObject.id) {
             secondCityId = objects.city1;
         } 
+        let secondCityName = null;
+        for (let city of cities) {
+            if (city.id == secondCityId) {
+                secondCityName = city;
+                break; 
+            }
+        }
     }
 }
 
