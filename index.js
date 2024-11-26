@@ -116,6 +116,18 @@ function getCityByName(cityNamePrompt) {
     h2.textContent = `${cityNamePrompt} finns inte i data basen`;
     h3.textContent = " " 
 
+const targetCity = getCityByName(cityNamePrompt);
+if (targetCity) {
+    updateBoxDistance({ city: targetCity, distance: 0 }, "target");
+
+    const closestCity = getClosestCity(targetCity);
+    const furthestCity = getFurthestCity(targetCity);
+
+    updateBoxDistance(closestCity, "closest");
+    updateBoxDistance(furthestCity, "furthest");
+
+   
+} 
 }
 
 //markCityBox(cities[0], "target");
