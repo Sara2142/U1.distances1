@@ -100,6 +100,7 @@ function updateBoxDistance(cityObject, kindOfCity) {
         FurthestSpan.textContent = `${cityObject.city.name}`
     }
 } 
+let cityNamePrompt = prompt ("Stad?")
 }
 
 //markCityBox(cities[0], "target");
