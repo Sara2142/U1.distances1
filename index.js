@@ -10,6 +10,7 @@ function createAllCityBoxes(cityName, idName){
 for (let cityName of cities){
     createAllCityBoxes(`${cityName.name}`,`${cityName.id}`)
 }
+function getClosestCity(targetCityObject) {
     }
 }
 
