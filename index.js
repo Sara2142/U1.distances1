@@ -11,6 +11,8 @@ for (let cityName of cities){
     createAllCityBoxes(`${cityName.name}`,`${cityName.id}`)
 }
 function getClosestCity(targetCityObject) {
+    let nearCity = null;
+    let nearDistance = null; 
     }
 }
 
