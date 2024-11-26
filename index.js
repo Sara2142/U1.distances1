@@ -10,3 +10,13 @@ function createAllCityBoxes(cityName, idName){
 for (let cityName of cities){
     createAllCityBoxes(`${cityName.name}`,`${cityName.id}`)
 }
+function markCityBox(cityObject, kindOfCity){
+    const cityBox = document.getElementById(cityObject.id)
+    if (cityBox){
+        cityBox.classList.add(kindOfCity)
+    }
+}
+
+//markCityBox(cities[0], "target");
+//markCityBox(cities[1], "closest");
+//markCityBox(cities[2], "furthest");
