@@ -42,6 +42,7 @@ function getClosestCity(targetCityObject) {
     }
     return { city: nearCity, distance: nearDistance };
 const closestCity = getClosestCity(cities[16]);
+console.log("Closest City:", closestCity.city.name, closestCity.distance);
     }
 }
 
