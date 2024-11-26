@@ -128,6 +128,31 @@ if (targetCity) {
 
    
 } 
+// mainDiv.style.gridTemplateRows = `repeat(${cities.length}, 1fr)`
+// for (let city of cities){
+//     const col = document.createElement("div")
+//     mainDiv.append(col)
+//     col.style.gridColumn = "1"
+//     col.textContent = city.id+ "-" + city.name; // Sätt texten till city.name
+//     col.classList.add("head_column")  
+
+
+//     const row = document.createElement("div")
+//     mainDiv.append(row)
+//     row.style.gridRow = "1"
+    
+//     row.textContent = city.id; // Sätt texten till city.name
+//     row.classList.add("head_row")  
+   
+
+
+    
+//     for (let i = 0; i <= 38; i++){
+//         const cell = document.createElement("div")
+//         mainDiv.append(cell)
+//         cell.textContent = `Hi`
+//     }
+     
 }
 
 //markCityBox(cities[0], "target");
