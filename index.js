@@ -187,6 +187,23 @@ function createDistanceTable(cities, distances) {
             if (j % 2 == 0) {
                 cell.classList.add("even_col");
             }
+            let distanceFilling = null;  
+
+            for (let distance of distances) {
+                if (distance.city1 === cities[i].id) {  
+                    if (distance.city2 === cities[j].id) {  
+                        distanceFilling = distance.distance;  
+                        break;  
+                    }
+                }
+
+                if (distance.city2 === cities[i].id) {  
+                    if (distance.city1 === cities[j].id) {  
+                        distanceFilling = distance.distance;  
+                        break;  
+                    }
+                }
+            }
 }
 
 //markCityBox(cities[0], "target");
