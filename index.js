@@ -10,10 +10,6 @@ function createAllCityBoxes(cityName, idName){
 for (let cityName of cities){
     createAllCityBoxes(`${cityName.name}`,`${cityName.id}`)
 }
-function markCityBox(cityObject, kindOfCity){
-    const cityBox = document.getElementById(cityObject.id)
-    if (cityBox){
-        cityBox.classList.add(kindOfCity)
     }
 }
 
