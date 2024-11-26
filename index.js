@@ -87,6 +87,13 @@ function updateBoxDistance(cityObject, kindOfCity) {
     const cityInMiles = (cityObject.distance / 10)
     const closestSpan = document.getElementById("closest")
     const FurthestSpan = document.getElementById("furthest")
+    if (kindOfCity == "target"){
+        cityBox.classList.add(kindOfCity); 
+    } else {
+        cityBox.classList.add(kindOfCity);
+        cityBox.id = kindOfCity;  
+        cityBox.textContent = `${cityObject.city.name} ligger ${cityInMiles} mil bort`; // Uppdatera texten
+    }
 }
 
 //markCityBox(cities[0], "target");
