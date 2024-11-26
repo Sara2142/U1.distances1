@@ -145,6 +145,7 @@ if (targetCity) {
 //     row.classList.add("head_row")  
    
 
+function createDistanceTable(cities, distances) {
 
     
 //     for (let i = 0; i <= 38; i++){
