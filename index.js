@@ -156,6 +156,9 @@ function createDistanceTable(cities, distances) {
         col.classList.add("head_column");
         col.classList.add("cell");
         
+        if (i % 2 == 0) {
+            col.classList.add("even_row");
+        }
 
     
 //     for (let i = 0; i <= 38; i++){
