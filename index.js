@@ -40,6 +40,7 @@ function getClosestCity(targetCityObject) {
         }
         
     }
+    return { city: nearCity, distance: nearDistance };
     }
 }
 
