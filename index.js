@@ -7,3 +7,6 @@ function createAllCityBoxes(cityName, idName){
     div.id = idName
     div.textContent = cityName
 }
+for (let cityName of cities){
+    createAllCityBoxes(`${cityName.name}`,`${cityName.id}`)
+}
