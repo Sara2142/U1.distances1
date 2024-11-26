@@ -224,3 +224,4 @@ function createDistanceTable(cities, distances) {
 //markCityBox(cities[0], "target");
 //markCityBox(cities[1], "closest");
 //markCityBox(cities[2], "furthest");
+createDistanceTable(cities, distances);
