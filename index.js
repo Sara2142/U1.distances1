@@ -32,6 +32,14 @@ function getClosestCity(targetCityObject) {
             if (nearDistance == null) {
                 nearCity = secondCityName;
                 nearDistance = objects.distance;  
+            } else if (objects.distance < nearDistance){
+                    nearCity = secondCityName;
+                    nearDistance = objects.distance;
+                
+            }
+        }
+        
+    }
     }
 }
 
