@@ -181,6 +181,12 @@ function createDistanceTable(cities, distances) {
             cell.style.gridColumn = `${j + 2}`; 
             cell.classList.add("cell");
 
+            if (i % 2 == 0) {
+                cell.classList.add("even_row");
+            }  
+            if (j % 2 == 0) {
+                cell.classList.add("even_col");
+            }
 }
 
 //markCityBox(cities[0], "target");
