@@ -112,6 +112,10 @@ function getCityByName(cityNamePrompt) {
             return city;
         }                  
     } 
+    titlePage.textContent = "Not Found"
+    h2.textContent = `${cityNamePrompt} finns inte i data basen`;
+    h3.textContent = " " 
+
 }
 
 //markCityBox(cities[0], "target");
