@@ -204,6 +204,15 @@ function createDistanceTable(cities, distances) {
                     }
                 }
             }
+            if (distanceFilling !== null) {
+                cell.textContent = (distanceFilling / 10);  
+            } else if (i === j) {
+                cell.textContent = " ";  
+            } 
+        }
+    }
+
+    // Skapa tom cellen på kolumn 1, rad 1
 }
 
 //markCityBox(cities[0], "target");
