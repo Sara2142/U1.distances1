@@ -175,6 +175,12 @@ function createDistanceTable(cities, distances) {
         row.classList.add("head_row");
         row.classList.add("cell");
         for (let j = 0; j <= 38; j++) {
+            const cell = document.createElement("div");
+            mainDiv.append(cell);
+            cell.style.gridRow = `${i + 2}`;  
+            cell.style.gridColumn = `${j + 2}`; 
+            cell.classList.add("cell");
+
 }
 
 //markCityBox(cities[0], "target");
