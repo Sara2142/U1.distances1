@@ -174,6 +174,7 @@ function createDistanceTable(cities, distances) {
         row.textContent = city.id; 
         row.classList.add("head_row");
         row.classList.add("cell");
+        for (let j = 0; j <= 38; j++) {
 }
 
 //markCityBox(cities[0], "target");
