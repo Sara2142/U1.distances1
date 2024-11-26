@@ -213,6 +213,12 @@ function createDistanceTable(cities, distances) {
     }
 
     // Skapa tom cellen på kolumn 1, rad 1
+    const emptyCell = document.createElement("div");
+    mainDiv.append(emptyCell);
+    emptyCell.style.gridColumn = "1";
+    emptyCell.style.gridRow = "1";
+    emptyCell.textContent = " ";  
+    emptyCell.classList.add("cell");
 }
 
 //markCityBox(cities[0], "target");
